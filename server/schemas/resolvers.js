@@ -7,7 +7,7 @@ const resolvers = {
     me: async (parent, args, context) => {
       if (context.user) {
         const userData = await User.findOne({ _id: context.user._id }).populate(
-          "savebooks"
+          "savedbooks"
         );
         return userData;
       }
@@ -46,6 +46,17 @@ const resolvers = {
             new: true,
             runValidators: true,
           }
+        );
+        return updatedUser;
+      }
+      throw new AuthenticationError("Not logged in!");
+    },
+    removeBook: async (parent, { bookId }, context) => {
+      if (context.user) {
+        const updatedUser = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $push: { savedBooks: { bookId: bookId } } },
+          { new: true }
         );
         return updatedUser;
       }
