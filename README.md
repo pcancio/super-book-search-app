@@ -2,11 +2,16 @@
 
 # Description
 
+This is an app that allows me to search for books and save them to a list I can reference later.
+
 # User Story
+
 AS AN avid reader <br>
 I WANT to search for new books to read <br>
 SO THAT I can keep a list of books to purchase
+
 # Acceptance Criteria
+
 GIVEN a book search engine <br>
 WHEN I load the search engine <br>
 THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button <br>
@@ -35,8 +40,21 @@ THEN I am presented with all of the books I have saved to my account, each featu
 WHEN I click on the Remove button on a book <br>
 THEN that book is deleted from my saved books list <br>
 WHEN I click on the Logout button <br>
-THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
+THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
 
 # Images
 
+Signup
+<img src="client/public/assets/Screen Shot 2022-03-12 at 15.33.58.png">
+<br>
+Search Books
+<img src= "client/public/assets/Screen Shot 2022-03-12 at 15.34.38.png">
+<br>
+Save Books
+<img src ="client/public/assets/Screen Shot 2022-03-12 at 15.34.59.png">
+
 # Links
+
+[Deployed App]()
+<br>
+[Github repo](https://github.com/pcancio/super-book-search-app)
